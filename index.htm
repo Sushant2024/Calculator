@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+
+        <nav>
+            <!-- To Apply 'Particle Effect' in Background -->
+            <div id="particles-js">
+
+            <h1 class="logo">Calculator</h1>
+            </div>
+        </nav>
+
+
+
+    <!-- CALCULATOR -->
+
+    <div class="calci">
+        <form name="calculator">
+            <table>
+                <!-- ROW 1: display Box -->
+                <tr>
+                    <td colspan="4">
+                        <input type="text" name="display" id="display" disabled />
+                    </td>
+                </tr>
+
+                <!-- ROW 2: 1 2 3 bksp -->
+                <tr class="btn">
+                    <td>
+                        <input id="num" type="button" name="one" value="1" onclick="calculator.display.value += '1'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="two" value="2" onclick="calculator.display.value += '2'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="three" value="3"
+                            onclick="calculator.display.value += '3'" />
+                    </td>
+                    <td>
+                        <input id="equal" style="font-size: small;" class="operator" type="button" name="bksp" value="bksp"
+                            onclick="back()" />
+                    </td>
+                </tr>
+                <!-- content is displayed on button using 'value' -->
+
+                <!-- ROW 3: 4 5 6 + -->
+                <tr class="btn">
+                    <td>
+                        <input id="num" type="button" name="four" value="4" onclick="calculator.display.value += '4'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="five" value="5" onclick="calculator.display.value += '5'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="six" value="6" onclick="calculator.display.value += '6'" />
+                    </td>
+                    <td>
+                        <input id="equal" class="operator" type="button" name="addition" value="+"
+                            onclick="calculator.display.value += '+'" />
+                    </td>
+                </tr>
+
+                <!-- ROW 4: 7 8 9 - -->
+                <tr class="btn">
+                    <td>
+                        <input id="num" type="button" name="seven" value="7"
+                            onclick="calculator.display.value += '7'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="eight" value="8"
+                            onclick="calculator.display.value += '8'" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="nine" value="9" onclick="calculator.display.value += '9'" />
+                    </td>
+                    <td>
+                        <input id="equal" class="operator" type="button" name="subtraction" value="-"
+                            onclick="calculator.display.value += '-'" />
+                    </td>
+                </tr>
+
+                <!-- ROW 5: ( 0 ) * -->
+                <tr class="btn">
+                    <td>
+                        <input id="equal" type="button" name="ltbrac" value="("
+                            onclick="calculator.display.value += '('" />
+                    </td>
+                    <td>
+                        <input id="num" type="button" name="zero" value="0" onclick="calculator.display.value += '0'" />
+                    </td>
+                    <td>
+                        <input id="equal" type="button" name="rtbrac" value=")"
+                            onclick="calculator.display.value += ')'" />
+                    </td>
+                    <td>
+                        <input id="equal" class="operator" type="button" name="multiplication" value="x"
+                            onclick="calculator.display.value += '*'" />
+                    </td>
+                </tr>
+
+                <!-- ROW 6: C . = / -->
+                <tr class="btn">
+                    <td>
+                        <input id="equal" type="button" name="clear" value="c"
+                            onclick="calculator.display.value = ''" />
+                    </td>
+                    <td>
+                        <input id="num" style="font-weight: bolder;" type="button" name="decimal" value="." onclick="calculator.display.value += '.'" />
+                    </td>
+                    <td>
+                        <input id="equal" type="button" name="evaluate" value="="
+                            onclick="calculator.display.value = eval(calculator.display.value)" />
+                    </td>
+                    <td>
+                        <input id="equal" class="operator" type="button" name="division" value="/"
+                            onclick="calculator.display.value += '/'" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+
+    <!-- Adding Javascript Source Files -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
