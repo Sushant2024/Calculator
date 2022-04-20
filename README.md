@@ -1,6 +1,7 @@
 # Calculator
 
 ### Light use calculator for Basic arithmetic operations
+- Totally Responsive Webpage (Compatible with Mobile View)
 
 ---
 
