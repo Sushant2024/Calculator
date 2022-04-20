@@ -12,3 +12,5 @@ Markdown Basic Syntax to write README.md files
 - [Markdown Syntax](https://www.markdownguide.org/basic-syntax/)
 
 
+### Image Preview:
+![Calculator](https://github.com/Sushant2024/Calculator/blob/f0fb622c550d056ab95871d86ce2275592a8ba15/Capture.PNG)
