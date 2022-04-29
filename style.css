@@ -32,7 +32,7 @@ nav{
 .calci{
     width: fit-content;
     box-sizing: border-box;
-    margin: 3% 40%;
+    margin: 3% auto;
     border-radius: 15px;
     padding: 20px 25px;
     background: linear-gradient(90deg,rgb(255, 32, 184),rgb(150, 57, 250),rgb(97, 224, 250));  
@@ -144,7 +144,7 @@ ________________________________________________ */
     .calci{
         width: 300px;
         box-sizing: border-box;
-        margin: 5% 20%;
+        margin: 5% auto;
         border-radius: 15px;
         background: linear-gradient(90deg,rgb(32, 255, 103),rgb(57, 224, 250),rgb(186, 97, 250)); 
     }
